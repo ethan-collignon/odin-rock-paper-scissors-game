@@ -18,9 +18,9 @@ function win(userChoice, computerChoice){
     userScore++;
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
-    const smallUserWord = "user".fontsize(3).sup();
-    const smallCompWord = "comp".fontsize(3).sup();
-    result_p.innerHTML = `${userChoice}${smallUserWord} beats ${computerChoice}${smallCompWord}. You Win!`;
+    // const smallUserWord = "user".fontsize(3).sup();
+    // const smallCompWord = "comp".fontsize(3).sup();
+    result_p.innerHTML = `${userChoice} beats ${computerChoice}. You Win!`;
     document.getElementById(userChoice).classList.add('green-glow');
     setTimeout(function() {document.getElementById(userChoice).classList.remove('green-glow') }, 500)
 }
@@ -28,17 +28,17 @@ function lose(userChoice, computerChoice){
     computerScore++;
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
-    const smallUserWord = "user".fontsize(3).sup();
-    const smallCompWord = "comp".fontsize(3).sup();
-    result_p.innerHTML = `${userChoice}${smallUserWord} loses to ${computerChoice}${smallCompWord}. You lose!`;
+    // const smallUserWord = "user".fontsize(3).sup();
+    // const smallCompWord = "comp".fontsize(3).sup();
+    result_p.innerHTML = `${userChoice} loses to ${computerChoice}. You lose!`;
     document.getElementById(userChoice).classList.add('red-glow');
     setTimeout(function() {document.getElementById(userChoice).classList.remove('red-glow') }, 500)
 
 }
 function draw(userChoice, computerChoice){
-    const smallUserWord = "user".fontsize(3).sup();
-    const smallCompWord = "comp".fontsize(3).sup();
-    result_p.innerHTML = `${userChoice}${smallUserWord} equals ${computerChoice}${smallCompWord}. It's a draw!`;
+    // const smallUserWord = "user".fontsize(3).sup();
+    // const smallCompWord = "comp".fontsize(3).sup();
+    result_p.innerHTML = `${userChoice} equals ${computerChoice}. It's a draw!`;
     document.getElementById(userChoice).classList.add('gray-glow');
     setTimeout(function() {document.getElementById(userChoice).classList.remove('gray-glow') }, 500)
 }
